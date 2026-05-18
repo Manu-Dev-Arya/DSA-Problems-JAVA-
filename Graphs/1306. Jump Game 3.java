@@ -4,8 +4,8 @@
 // Approach:
 // Use BFS/DFS 
 
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Time Complexity: O(n) All the nodes are visited at max once in BFS/DFS traversal
+// Space Complexity: O(n) visited array and Queue is used 
 
 class Solution {
     public boolean canReach(int[] arr, int start) {  
