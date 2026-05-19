@@ -28,3 +28,24 @@ class Solution {
         return -1;
     }
 }
+
+//Approch:
+// HashSet
+
+// Time Complexity: O(n + m) where n and m are the lengths of the two arrays
+// Space Complexity: O(n) where n is the length of the first array
+
+public class Solution {
+    public int getCommon(int[] nums1, int[] nums2) {
+        Set<Integer> set1 = new HashSet<>();
+        for (int num : nums1) {
+            set1.add(num);
+        }
+        for (int num : nums2) {
+            if (set1.contains(num)) {
+                return num;
+            }
+        }
+        return -1;
+    }
+}
