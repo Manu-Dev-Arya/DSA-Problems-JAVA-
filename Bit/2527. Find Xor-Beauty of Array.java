@@ -16,3 +16,14 @@ class Solution {
         return xorRes;
     }
 }
+
+class Solution {
+    public int xorBeauty(int[] nums) {
+        int n = nums.length;
+        int xorRes = 0;
+        for(int i = 0; i < n; i++){
+            xorRes = xorRes ^ nums[i];
+        }
+        return xorRes;
+    }
+}
