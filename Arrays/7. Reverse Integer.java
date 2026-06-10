@@ -25,3 +25,30 @@ class Solution {
         return response[0] * (int)(Math.pow(10, (count-response[1])));
     }
 }
+
+
+//Another Approach
+
+class Solution {
+    public int reverse(int x) {
+        int num = 0;
+        int min = Integer.MIN_VALUE;
+        int max = Integer.MAX_VALUE;
+        while(x != 0){
+            int rem = x % 10;
+            if(rem < 0){
+                if(num < min/10 || (num == min/10 && rem < -8)){
+                    return 0;
+                }
+            }else{
+                if(num > max/10 || (num == max/10 && rem > 7)){
+                    return 0;
+                }
+            }
+            num = num * 10 + rem;
+            x = x / 10;
+        }
+        return num;
+    }
+    
+}
