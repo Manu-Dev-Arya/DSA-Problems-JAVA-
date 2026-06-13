@@ -1,4 +1,4 @@
-// Problem: 2540. Minimum Common Value
+
 // Link: https://leetcode.com/problems/longest-palindromic-substring/description/
 
 // Approach:
