@@ -25,3 +25,5 @@ class Solution {
         return y == 0 ? x : gcd(y, x % y);
     }
 }
+
+//take Max value as Integer.MIN_VALUE as it will maintain the standard
